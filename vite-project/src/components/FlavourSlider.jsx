@@ -69,27 +69,29 @@ const FlavorSlider = () => {
         {flavorlists.map((flavor) => (
           <div
             key={flavor.name}
-            className={`relative z-30 lg:w-[50vw] w-96 lg:h-[70vh] md:w-[90vw] md:h-[50vh] h-80 flex-none ${flavor.rotation}`}
+            className={`relative z-10 lg:w-[50vw] w-96 lg:h-[70vh] md:w-[90vw] md:h-[50vh] h-80 flex-none ${flavor.rotation} rounded-2xl overflow-hidden`}
           >
             <img
-              src={`/images/${flavor.color}-bg.svg`}
+              src={`/images/${flavor.number}-bg.png`}
               alt=""
-              className="absolute bottom-0"
+              className="absolute bottom-0 w-full h-full object-cover rounded-2xl"
             />
 
             <img
-              src={`/images/${flavor.color}-drink.webp`}
+              src={`/images/zeera-${flavor.number}.png`}
               alt=""
-              className="drinks"
+              className="drinks absolute left-1/2 -translate-x-1/2 bottom-0 md:h-full h-80 z-20"
             />
 
             <img
-              src={`/images/${flavor.color}-elements.webp`}
+              src={`/images/${flavor.number}-elements.png`}
               alt=""
-              className="elements"
+              className="elements absolute top-0 w-full h-full object-cover z-0"
             />
 
-            <h1>{flavor.name}</h1>
+            <h1 className="absolute md:bottom-10 md:left-10 bottom-5 left-5 text-yellow-400 md:text-6xl text-3xl font-semibold uppercase tracking-tighter z-30">
+              {flavor.name}
+            </h1>
           </div>
         ))}
       </div>
