@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "ProximaNova, sans-serif";
+  src: url("/fonts/ProximaNova-Regular.otf");
+}
+
+@theme {
+  --color-black: #1a3c34;
+  --color-main-bg: #2a4d3e;
+  --color-white: #ffffff;
+  --color-dark-green: #355e3b;
+  --color-mid-green: #6b9e4a;
+  --color-light-green: #b8e08e;
+  --color-yellow-green: #d4e157;
+  --color-lemon-yellow: #f4f27a;
+  --color-pale-yellow: #fef9e7;
+  --color-dark-yellow: #e6b800;
+  --color-light-cream: #f7f4e1;
+  --font-sans: "Antonio", sans-serif;
+  --font-paragraph: "ProximaNova, sans-serif";
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f4e1;
+  color: #355e3b;
+  font-family: "Antonio", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+  .abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+  .general-title {
+    @apply 2xl:text-[8.5rem] md:text-8xl text-5xl font-bold uppercase leading-[9vw] tracking-[-.35vw];
+  }
+}
+
+@layer components {
+  .paragraph-line {
+    @apply text-nowrap overflow-hidden;
+  }
+
+  .message-content {
+    @apply bg-[#6b9e4a] text-light-cream min-h-dvh overflow-hidden flex justify-center items-center relative z-20;
+
+    .msg-wrapper {
+      @apply 2xl:text-[8.5rem] md:text-8xl text-5xl font-bold uppercase leading-[9vw] tracking-[-.35vw] flex flex-col justify-center items-center md:gap-24 gap-14;
+
+      h1:first-of-type {
+        @apply 2xl:max-w-4xl md:max-w-2xl max-w-xs text-center text-[#f7f4e110];
+      }
+
+      h1:last-of-type {
+        @apply 2xl:max-w-7xl md:max-w-4xl max-w-xs text-center text-[#f7f4e110];
+      }
+    }
+
+    p {
+      @apply text-center font-paragraph;
+    }
+
+    h1,
+    h2 {
+      @apply leading-none;
+    }
+
+    .msg-text-scroll {
+      @apply rotate-[3deg] 2xl:translate-y-5 -translate-y-5 absolute z-10 border-[.5vw] border-[#6b9e4a];
+
+      .hero-subtitle {
+        @apply bg-mid-green;
+      }
+
+      h2 {
+        @apply text-dark-green;
+      }
+    }
+  }
+}
