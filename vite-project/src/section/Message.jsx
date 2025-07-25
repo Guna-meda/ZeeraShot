@@ -92,7 +92,7 @@ const Message = () => {
       </div>
        <img
         className="zeera-can absolute bottom-0 left-1/2 -translate-x-1/2 object-contain max-w-[300px] md:max-w-[400px] z-0 opacity-70"
-        src="/images/zeera1.png"
+        src="/images/zeera-1.png"
         alt="zeera-img"
       />
     </section>

@@ -44,7 +44,9 @@ const FlavorTitle = () => {
   return (
     <div className="general-title col-center h-full 2xl:gap-32 xl:gap-24 gap-16"> {/* Restored gap classes */}
       <div className="overflow-hidden 2xl:py-0 py-3 first-text-split">
-        <h1>We have 6</h1>
+        <h1>We made them because 
+
+</h1>
       </div>
 
       <div
@@ -54,12 +56,12 @@ const FlavorTitle = () => {
         className="flavor-text-scroll"
       >
         <div className="bg-dark-yellow pb-5 2xl:pt-0 pt-3 2xl:px-5 px-3">
-          <h2 className="text-light-cream">freaking</h2>
+          <h2 className="text-light-cream">3 FLAVOURS</h2>
         </div>
       </div>
 
       <div className="2xl:py-0 py-3 second-text-split">
-        <h1 className="text-dark-green">delicious flavors</h1> {/* Changed to dark-green for better contrast */}
+        <h1 className="text-dark-green">one just wasn't enough.</h1> {/* Changed to dark-green for better contrast */}
       </div>
     </div>
   );
