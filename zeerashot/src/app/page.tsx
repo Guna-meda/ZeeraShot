@@ -1,28 +1,32 @@
+"use client";
+
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
-import Message from "./section/Message";
-import Flavor from "./section/Flavor";
+import Message from "@/sections/Message";
+import Flavor from "@/sections/Flavor";
 import { useGSAP } from "@gsap/react";
+import Testimonials from "@/sections/Testimonials";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-const App = () => {
+const Home: React.FC = () => {
   useGSAP(() => {
     ScrollSmoother.create({
       smooth: 3,
       effects: true,
     });
   });
+
   return (
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <div className="h-80"></div>
-        <Message></Message>
-
+        <Message />
         <Flavor />
+        <Testimonials />
       </div>
     </div>
   );
 };
 
-export default App;
+export default Home;

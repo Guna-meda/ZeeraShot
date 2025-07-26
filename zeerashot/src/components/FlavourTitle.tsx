@@ -1,8 +1,12 @@
+"use client";
+
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
 
-const FlavorTitle = () => {
+gsap.registerPlugin(SplitText);
+
+const FlavorTitle: React.FC = () => {
   useGSAP(() => {
     const firstTextSplit = SplitText.create(".first-text-split h1", {
       type: "chars",
@@ -36,17 +40,15 @@ const FlavorTitle = () => {
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".flavor-section",
-        start: "top 30%", // Adjusted to match first text
+        start: "top 30%",
       },
     });
   });
 
   return (
-    <div className="general-title col-center h-full 2xl:gap-32 xl:gap-24 gap-16"> {/* Restored gap classes */}
+    <div className="general-title col-center h-full 2xl:gap-32 xl:gap-24 gap-16">
       <div className="overflow-hidden 2xl:py-0 py-3 first-text-split">
-        <h1>We made them because 
-
-</h1>
+        <h1>We made them because</h1>
       </div>
 
       <div
@@ -61,7 +63,7 @@ const FlavorTitle = () => {
       </div>
 
       <div className="2xl:py-0 py-3 second-text-split">
-        <h1 className="text-dark-green">one just wasn't enough.</h1> {/* Changed to dark-green for better contrast */}
+        <h1 className="text-dark-green">one just wasn&apos;t enough.</h1>
       </div>
     </div>
   );

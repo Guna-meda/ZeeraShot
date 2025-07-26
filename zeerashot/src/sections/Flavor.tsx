@@ -1,7 +1,9 @@
-import FlavourSlider from '../components/FlavourSlider'
-import FlavourTitle from '../components/FlavourTitle'
+"use client";
 
-const Flavor = () => {
+import FlavourSlider from '@/components/FlavourSlider';
+import FlavourTitle from '@/components/FlavourTitle';
+
+const Flavor: React.FC = () => {
   return (
     <section className="flavor-section">
       <div className="h-full flex lg:flex-row flex-col items-center relative">
@@ -13,7 +15,7 @@ const Flavor = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Flavor
+export default Flavor;
