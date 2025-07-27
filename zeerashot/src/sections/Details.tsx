@@ -2,7 +2,7 @@
 "use client";
 
 import { useGSAP } from "@gsap/react";
-import ClipPathTitle from "../components/ClipPathTitle";
+import ClipPathTitle from "../components/LandingPage/ClipPathTitle";
 import gsap from "gsap";
 
 const Details: React.FC = () => {

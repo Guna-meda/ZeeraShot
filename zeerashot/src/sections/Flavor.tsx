@@ -1,7 +1,7 @@
 "use client";
 
-import FlavourSlider from '@/components/FlavourSlider';
-import FlavourTitle from '@/components/FlavourTitle';
+import FlavourSlider from '@/components/LandingPage/FlavourSlider';
+import FlavourTitle from '@/components/LandingPage/FlavourTitle';
 
 const Flavor: React.FC = () => {
   return (
