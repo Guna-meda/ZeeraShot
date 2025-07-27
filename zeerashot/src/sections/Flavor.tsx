@@ -14,6 +14,12 @@ const Flavor: React.FC = () => {
           <FlavourSlider />
         </div>
       </div>
+{/*button to be fixed*/}
+      <div className="w-full flex justify-center py-6 bg-light-cream">
+        <button className="px-8 py-3 bg-transparent border-2 border-dark-green text-dark-green font-bold uppercase text-lg rounded-lg transition-colors duration-300 hover:bg-dark-green hover:text-light-cream active:bg-mid-green active:text-white">
+          Get it now
+        </button>
+      </div>
     </section>
   );
 };

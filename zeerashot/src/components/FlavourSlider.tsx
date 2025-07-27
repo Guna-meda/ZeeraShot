@@ -110,3 +110,5 @@ const FlavorSlider: React.FC = () => {
 };
 
 export default FlavorSlider;
+
+

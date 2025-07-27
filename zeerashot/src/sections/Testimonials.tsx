@@ -76,7 +76,7 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="testimonials-section">
+    <section className="testimonials-section ">
       <div className="absolute size-full flex flex-col items-center pt-[5vw]">
         <h1 className="text-black first-title">What's</h1>
         <h1 className="text-light-brown sec-title">Everyone</h1>

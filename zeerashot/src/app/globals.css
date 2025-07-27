@@ -60,6 +60,19 @@ body::-webkit-scrollbar {
     @apply text-nowrap overflow-hidden;
   }
 
+   .custom-button {
+    @apply px-8 py-3 bg-transparent border-2 border-dark-green text-dark-green font-bold uppercase text-lg rounded-lg transition-colors duration-300;
+  }
+
+  .custom-button:hover {
+    @apply bg-dark-green text-light-cream;
+  }
+
+  .custom-button:active {
+    @apply bg-mid-green text-white;
+  }
+
+
   .message-content {
     @apply bg-[#6b9e4a] text-light-cream min-h-dvh overflow-hidden flex justify-center items-center relative z-20;
 
