@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import ClipPathTitle from "../components/ClipPathTitle";
 import gsap from "gsap";
 
-const BenefitSection: React.FC = () => {
+const Details: React.FC = () => {
   useGSAP(() => {
     const revealTl = gsap.timeline({
       delay: 1,
@@ -94,4 +94,4 @@ const BenefitSection: React.FC = () => {
   );
 };
 
-export default BenefitSection;
+export default Details;
