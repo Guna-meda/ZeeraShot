@@ -137,6 +137,30 @@ body::-webkit-scrollbar {
       }
     }
   }
+.details-section {
+    @apply min-h-dvh bg-[var(--color-black)] overflow-hidden relative;
 
+    p {
+      @apply text-[var(--color-light-cream)] font-[var(--font-paragraph)] text-center text-lg;
+    }
+
+    .first-title {
+      @apply rotate-[3deg] relative z-10;
+    }
+
+    .second-title {
+      @apply rotate-[-1deg] md:-translate-y-5;
+    }
+
+    .third-title {
+      @apply rotate-[1deg] md:-translate-y-12 relative z-10;
+    }
+
+    .fourth-title {
+      @apply rotate-[-5deg] md:-translate-y-12;
+    }
+
+    
+  }
 
 }
