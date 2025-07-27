@@ -5,7 +5,6 @@ import gsap from "gsap";
 import Message from "@/sections/Message";
 import Flavor from "@/sections/Flavor";
 import { useGSAP } from "@gsap/react";
-import Testimonials from "@/sections/Testimonials";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -23,7 +22,6 @@ const Home: React.FC = () => {
         <div className="h-80"></div>
         <Message />
         <Flavor />
-        <Testimonials />
       </div>
     </div>
   );

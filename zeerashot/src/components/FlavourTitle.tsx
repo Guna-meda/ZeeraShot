@@ -46,6 +46,8 @@ const FlavorTitle: React.FC = () => {
   });
 
   return (
+    <>
+     
     <div className="general-title col-center h-full 2xl:gap-32 xl:gap-24 gap-16">
       <div className="overflow-hidden 2xl:py-0 py-3 first-text-split">
         <h1>We made them because</h1>
@@ -66,6 +68,12 @@ const FlavorTitle: React.FC = () => {
         <h1 className="text-dark-green">one wasn't enough.</h1>
       </div>
     </div>
+    <div className="hidden md:flex justify-center mt-6">
+  <button className="px-8 py-3 bg-transparent border-2 border-dark-green text-dark-green font-bold uppercase text-lg rounded-lg transition-colors duration-300 hover:bg-dark-green hover:text-light-cream active:bg-mid-green active:text-white">
+    Get it now
+  </button>
+</div>
+    </>
   );
 };
 

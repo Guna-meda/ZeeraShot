@@ -60,16 +60,8 @@ body::-webkit-scrollbar {
     @apply text-nowrap overflow-hidden;
   }
 
-   .custom-button {
-    @apply px-8 py-3 bg-transparent border-2 border-dark-green text-dark-green font-bold uppercase text-lg rounded-lg transition-colors duration-300;
-  }
-
-  .custom-button:hover {
-    @apply bg-dark-green text-light-cream;
-  }
-
-  .custom-button:active {
-    @apply bg-mid-green text-white;
+    .custom-button {
+    @apply px-8 py-3 border-2 border-dark-green text-dark-green font-bold uppercase text-lg rounded-lg transition duration-300 hover:bg-dark-green hover:text-light-cream active:bg-mid-green active:text-white;
   }
 
 
@@ -146,19 +138,6 @@ body::-webkit-scrollbar {
     }
   }
 
-  .testimonials-section {
-    @apply bg-light-cream relative w-full h-[120dvh];
 
-    .pin-box {
-      @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-32 bottom-[50vh];
-
-      .vd-card {
-        @apply md:w-96 w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute border-[.5vw] border-light-cream;
-      }
-    }
-
-    h1 {
-      @apply uppercase text-[20.5vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
-    }
-  }
+  
 }
