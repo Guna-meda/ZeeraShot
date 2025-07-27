@@ -63,7 +63,7 @@ const FlavorTitle: React.FC = () => {
       </div>
 
       <div className="2xl:py-0 py-3 second-text-split">
-        <h1 className="text-dark-green">one just wasn&apos;t enough.</h1>
+        <h1 className="text-dark-green">one just wasn't enough.</h1>
       </div>
     </div>
   );

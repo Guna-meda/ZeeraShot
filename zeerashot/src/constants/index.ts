@@ -1,4 +1,18 @@
-const flavorlists = [
+export interface Flavor {
+  name: string;
+  number: string;
+  rotation: string;
+}
+
+export interface Card {
+  src: string;
+  rotation: string;
+  name: string;
+  img: string;
+  translation?: string;
+}
+
+export const flavorlists: Flavor[] = [
   {
     name: "Lemon",
     number: "1",
@@ -14,10 +28,9 @@ const flavorlists = [
     number: "5",
     rotation: "md:rotate-[-8deg] rotate-0",
   },
-  
 ];
 
-const cards = [
+export const cards: Card[] = [
   {
     src: "/videos/f1.mp4",
     rotation: "rotate-z-[-10deg]",
@@ -66,5 +79,3 @@ const cards = [
     translation: "translate-y-[10%]",
   },
 ];
-
-export { flavorlists, cards };
