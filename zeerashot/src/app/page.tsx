@@ -24,8 +24,9 @@ const Home: React.FC = () => {
         <div className="h-80"></div>
         <Message />
         <Flavor />
-        <Details/>
-        <TestimonialSection/>
+        <TestimonialSection />
+        <div className="hidden xl:block mt-60" />
+        <Details />
       </div>
     </div>
   );
